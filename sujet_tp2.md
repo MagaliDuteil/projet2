@@ -26,4 +26,10 @@ En enfin, demandez s'il souhaite qu'on affiche les 10 premières données de la 
 
 Si l'utilisateur souhaite de nouveau faire des traitements sur d'autres villes, il n'aura pas à redémarrer l'application.
 
-Le lien vers les csv se trouve dans le fichier lien_vers_data.docx
+Liens csv : 
+
+https://mohamed-compartiment-neosoft.s3.amazonaws.com/cleaned_chicago_city.csv 
+
+https://mohamed-compartiment-neosoft.s3.amazonaws.com/cleaned_new_york_city.csv 
+
+https://mohamed-compartiment-neosoft.s3.amazonaws.com/cleaned_washington_city.csv 
