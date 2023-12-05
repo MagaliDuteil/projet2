@@ -25,3 +25,5 @@ Une fois ces informations recoltées, vous obtenez les informations traitées su
 En enfin, demandez s'il souhaite qu'on affiche les 10 premières données de la période selectionnée sous forme de tableau.
 
 Si l'utilisateur souhaite de nouveau faire des traitements sur d'autres villes, il n'aura pas à redémarrer l'application.
+
+Le lien vers les csv se trouve dans le fichier lien_vers_data.docx
