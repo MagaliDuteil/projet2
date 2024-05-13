@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   City app
+</head>
+<body> 
+   <form action="{{url_for('recherche_city')}}" method='POST'>
+    <h3>Choisissez la ville</h3>
+    <input type="radio" name="name_city" value="New York City"> New York City <br>
+        <select name='month'>
+            <option value='01'>Janvier</option>
+            <option value='02'>Février</option>
+            <option value='03'>Mars</option>
+            <option value='04'>Avril</option>
+            <option value='05'>Mai</option>
+            <option value='06'>Juin</option>
+        </select><br><br>
+    <input type="radio" name="name_city" value="Chicago"> Chicago <br>
+        <select name='month'>
+            <option value='07'> Juillet </option>
+            <option value='08'> Aout </option>
+            <option value='09'> Septembre </option>
+        </select><br><br>
+    <input type="radio" name="name_city" value="Washington"> Washington <br>
+        <select name='month'>
+            <option value='10'> Octobre </option>
+            <option value='11'> Novembre </option>
+            <option value='12'> Décembre </option>
+        </select><br><br>
+    <input type='submit' value='soumettre'/>
+    </form>
+    <h1>Résultats de la recherche</h1>
+    <p>Jour de la semaine avec le plus d'activité : {{ jour_max }}</p>
+    <p>Heure de démarrage la plus courante : {{ heure_courante }}</p>
+    <p>Durée moyenne d'un trajet : {{ duree_moyenne }}</p>
+    <p>Total par catégorie d'utilisateur : {{ total_categorie }}</p>
+    <p>Nombre total de femmes et d'hommes : {{ nombre_sexe }}</p>
+    <p>Année de naissance la plus ancienne : {{ annee_ancienne }}</p>
+    <p>Année de naissance la plus récente : {{ annee_recente }}</p>
+    <p>Année de naissance la plus courante : {{ annee_courante }}</p>
+
+    <hr>
+
+    {{ name }}
+    {{ month }}
+</body>
+</html>
