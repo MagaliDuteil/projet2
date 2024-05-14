@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        body {
+            background-color: #F7F0F9;
+        }
+    </style>
 <head>
-   City app
+    <title>
+        City app
+    </title>
 </head>
 <body> 
+    <h1 style="text-align: center; color: #4A025E ; font-size: 35px; font-family: Elephant; text-decoration: underline";>
+        Statistiques vélos libre-service
+    </h1>
    <form action="{{url_for('recherche_city')}}" method='POST'>
-    <h3>Choisissez la ville</h3>
+    <h3 style= "color: #89479C; font-family: Constantia">Choisissez la ville</h3>
     <input type="radio" name="name_city" value="New York City"> New York City <br>
         <select name='month'>
             <option value='01'>Janvier</option>
@@ -29,7 +39,8 @@
         </select><br><br>
     <input type='submit' value='soumettre'/>
     </form>
-    <h1>Résultats de la recherche</h1>
+    <h1 style="text-align: center; color: #4A025E ; font-size: 30px; font-family: Elephant; text-decoration: underline";>Résultats de la recherche</h1>
+    <p>Jour de la semaine avec le plus d'activité : {{ jour_max }}</p>
     <p>Jour de la semaine avec le plus d'activité : {{ jour_max }}</p>
     <p>Heure de démarrage la plus courante : {{ heure_courante }}</p>
     <p>Durée moyenne d'un trajet : {{ duree_moyenne }}</p>
